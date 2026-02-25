@@ -15,12 +15,11 @@ public class FirstScript : MonoBehaviour
     void Update()
     {
         
-        if (Time.time > 6 && Time.time < 8)
-        {
-            rb.AddForce(0, 0, 13);
-        }else
-        {
-            rb.AddForce(0, 10, 0);
+    }
+    void FixedUpdate()
+    {
+        if (Time.time > 3 && Time.time < 5) {
+            rb.AddForce(0, 0, 10);
         }
     }
 }
